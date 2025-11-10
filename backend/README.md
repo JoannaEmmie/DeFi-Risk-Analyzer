@@ -1,6 +1,8 @@
 # Backend (Hardhat)
 
-Commands:
+This directory contains the Hardhat project for the DeFi Risk Analyzer smart contract.
+
+## Commands:
 
 - Install
   ```

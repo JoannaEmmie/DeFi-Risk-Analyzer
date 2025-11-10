@@ -40,6 +40,7 @@ if (!SEPOLIA_RPC_URL) {
 const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   namedAccounts: {
+    // First account is used as deployer
     deployer: 0
   },
   etherscan: {
