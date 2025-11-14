@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Ensure full height for layout */
 html, body, #__next {
   height: 100%;
 }
