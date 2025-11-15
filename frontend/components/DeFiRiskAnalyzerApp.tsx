@@ -6,6 +6,7 @@ import { useMetaMaskEthersSigner } from "@/hooks/metamask/useMetaMaskEthersSigne
 import { useDeFiRiskAnalyzer } from "@/hooks/useDeFiRiskAnalyzer";
 import { errorNotDeployed } from "./ErrorNotDeployed";
 
+// Convert risk level number to human-readable text
 const getRiskLevelText = (level: bigint | undefined): string => {
   if (level === undefined) return "-";
   const num = Number(level);
