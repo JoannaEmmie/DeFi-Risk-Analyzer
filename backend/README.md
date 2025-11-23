@@ -25,4 +25,6 @@ This directory contains the Hardhat project for the DeFi Risk Analyzer smart con
 
 The deployment artifacts are saved under `deployments/<chain>/DeFiRiskAnalyzer.json`.
 
+**Note:** FHEVM dependencies have been updated to the latest versions.
+
 
