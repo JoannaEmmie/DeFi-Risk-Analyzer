@@ -1,0 +1,31 @@
+{
+  "name": "defi-risk-analyzer-backend",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf artifacts cache deployments types",
+    "compile": "hardhat compile",
+    "node": "hardhat node",
+    "deploy:localhost": "hardhat deploy --network localhost",
+    "deploy:sepolia": "hardhat deploy --network sepolia",
+    "test": "hardhat test"
+  },
+  "dependencies": {
+    "@fhevm/hardhat-plugin": "^0.3.0-1",
+    "@fhevm/solidity": "^0.9.1",
+    "hardhat-deploy": "^0.12.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@types/node": "^20.10.6",
+    "ethers": "^6.12.1",
+    "hardhat": "^2.22.15",
+    "hardhat-gas-reporter": "^2.2.2",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
+
