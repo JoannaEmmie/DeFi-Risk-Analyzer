@@ -205,12 +205,13 @@ export const useDeFiRiskAnalyzer = (parameters: {
           setMessage("Ignore decrypted results (stale)");
           return;
         }
+        const resRecord = res as Record<string, bigint | undefined>;
         const next: ClearResult = {
-          riskScore: typeof res[thisHandles.riskScore!] === 'bigint' ? res[thisHandles.riskScore!] as bigint : undefined,
-          riskLevel: typeof res[thisHandles.riskLevel!] === 'bigint' ? res[thisHandles.riskLevel!] as bigint : undefined,
-          stable: typeof res[thisHandles.stable!] === 'bigint' ? res[thisHandles.stable!] as bigint : undefined,
-          bluechip: typeof res[thisHandles.bluechip!] === 'bigint' ? res[thisHandles.bluechip!] as bigint : undefined,
-          highRisk: typeof res[thisHandles.highRisk!] === 'bigint' ? res[thisHandles.highRisk!] as bigint : undefined,
+          riskScore: typeof resRecord[thisHandles.riskScore!] === 'bigint' ? resRecord[thisHandles.riskScore!] as bigint : undefined,
+          riskLevel: typeof resRecord[thisHandles.riskLevel!] === 'bigint' ? resRecord[thisHandles.riskLevel!] as bigint : undefined,
+          stable: typeof resRecord[thisHandles.stable!] === 'bigint' ? resRecord[thisHandles.stable!] as bigint : undefined,
+          bluechip: typeof resRecord[thisHandles.bluechip!] === 'bigint' ? resRecord[thisHandles.bluechip!] as bigint : undefined,
+          highRisk: typeof resRecord[thisHandles.highRisk!] === 'bigint' ? resRecord[thisHandles.highRisk!] as bigint : undefined,
         };
         clearRef.current = next;
         setClear(next);
