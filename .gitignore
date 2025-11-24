@@ -66,5 +66,4 @@ frontend/build/
 # Backend specific
 backend/cache/
 backend/artifacts/
-backend/deployments/
 
